@@ -1,13 +1,69 @@
+import { useEffect, useState } from "react";
+
+interface ThemeConfig {
+  logoUrl?: string;
+  logoShape?: 'circle' | 'square' | 'rounded';
+}
+
 export function Footer() {
+  const [theme, setTheme] = useState<ThemeConfig>({});
+
+  useEffect(() => {
+    // Load saved theme from localStorage
+    const saved = localStorage.getItem('tommy_theme_config');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setTheme(parsed);
+      } catch (e) {
+        console.error('Failed to parse saved theme:', e);
+      }
+    }
+
+    // Listen for theme changes
+    const handleStorageChange = () => {
+      const saved = localStorage.getItem('tommy_theme_config');
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          setTheme(parsed);
+        } catch (e) {
+          console.error('Failed to parse saved theme:', e);
+        }
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('theme-updated', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('theme-updated', handleStorageChange);
+    };
+  }, []);
+
+  const currentLogo = theme.logoUrl || '/logo.png';
+  const logoShapeClass = theme.logoShape === 'circle' ? 'rounded-full' :
+                         theme.logoShape === 'rounded' ? 'rounded-lg' :
+                         '';
+
   return (
     <footer className="bg-gray-900 text-white py-6 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="text-white text-2xl font-bold tracking-tight">
-                Tommy Kovatch
-              </div>
+              {theme.logoUrl ? (
+                <img 
+                  src={currentLogo} 
+                  alt="Tommy Kovatch" 
+                  className={`h-[60px] w-auto object-contain ${logoShapeClass}`}
+                />
+              ) : (
+                <div className="text-white text-2xl font-bold tracking-tight">
+                  Tommy Kovatch
+                </div>
+              )}
             </div>
             <p className="text-gray-400 text-sm">
               Empowering families to achieve lasting financial freedom through transparent, accessible strategies.

@@ -235,7 +235,15 @@ export function ThemeCustomizer() {
 
   // Hide the UI controls - colors still apply automatically
   if (!isOpen) {
-    return null; // Don't show the settings button
+    return (
+      <button
+        onClick={() => setIsOpen(true)}
+        className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-[#1a3a5c] to-[#c9a961] text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-110"
+        aria-label="Open theme customizer"
+      >
+        <Settings className="size-6" />
+      </button>
+    );
   }
 
   return (
