@@ -42,7 +42,7 @@ export function Footer() {
     };
   }, []);
 
-  const currentLogo = theme.logoUrl || '/logo.png';
+  const currentLogo = theme.logoUrl || '/Tommy White Logo V2.png';
   const logoShapeClass = theme.logoShape === 'circle' ? 'rounded-full' :
                          theme.logoShape === 'rounded' ? 'rounded-lg' :
                          '';
@@ -53,17 +53,11 @@ export function Footer() {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              {theme.logoUrl ? (
-                <img 
-                  src={currentLogo} 
-                  alt="Tommy Kovatch" 
-                  className={`h-[60px] w-auto object-contain ${logoShapeClass}`}
-                />
-              ) : (
-                <div className="text-white text-2xl font-bold tracking-tight">
-                  Tommy Kovatch
-                </div>
-              )}
+              <img 
+                src={currentLogo} 
+                alt="Tommy Kovatch" 
+                className={`h-[60px] w-auto object-contain ${logoShapeClass}`}
+              />
             </div>
             <p className="text-gray-400 text-sm">
               Empowering families to achieve lasting financial freedom through transparent, accessible strategies.

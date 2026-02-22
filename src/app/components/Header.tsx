@@ -48,7 +48,7 @@ export function Header() {
     document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const currentLogo = theme.logoUrl || '/logo.png';
+  const currentLogo = theme.logoUrl || '/Tommy White Logo V2.png';
   const logoShapeClass = theme.logoShape === 'circle' ? 'rounded-full' :
                          theme.logoShape === 'rounded' ? 'rounded-lg' :
                          '';
@@ -59,17 +59,11 @@ export function Header() {
         {/* Desktop Layout */}
         <div className="hidden sm:flex h-[138px] items-center justify-between">
           <div className="flex items-center gap-2 -ml-[10px]">
-            {theme.logoUrl ? (
-              <img 
-                src={currentLogo} 
-                alt="Tommy Kovatch" 
-                className={`h-[134px] w-auto object-contain ${logoShapeClass}`}
-              />
-            ) : (
-              <div className="text-white text-4xl font-bold tracking-tight">
-                Tommy Kovatch
-              </div>
-            )}
+            <img 
+              src={currentLogo} 
+              alt="Tommy Kovatch" 
+              className={`h-[134px] w-auto object-contain ${logoShapeClass}`}
+            />
           </div>
           <Button 
             onClick={scrollToRegistration}
@@ -83,17 +77,11 @@ export function Header() {
         <div className="sm:hidden py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 -ml-[10px]">
-              {theme.logoUrl ? (
-                <img 
-                  src={currentLogo} 
-                  alt="Tommy Kovatch" 
-                  className={`h-[69px] w-auto object-contain ${logoShapeClass}`}
-                />
-              ) : (
-                <div className="text-white text-2xl font-bold tracking-tight">
-                  Tommy Kovatch
-                </div>
-              )}
+              <img 
+                src={currentLogo} 
+                alt="Tommy Kovatch" 
+                className={`h-[69px] w-auto object-contain ${logoShapeClass}`}
+              />
             </div>
             <Button 
               onClick={scrollToRegistration}
