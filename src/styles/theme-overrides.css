@@ -1,0 +1,243 @@
+/* Dynamic theme overrides based on customizer settings */
+
+/* Primary color overrides - gradient backgrounds */
+[data-theme-primary="blue"] {
+  --primary-gradient-from: #2563eb;
+  --primary-gradient-to: #1d4ed8;
+  --primary-bg: #3b82f6;
+  --primary-hover: #2563eb;
+}
+
+[data-theme-primary="indigo"] {
+  --primary-gradient-from: #6366f1;
+  --primary-gradient-to: #4f46e5;
+  --primary-bg: #6366f1;
+  --primary-hover: #4f46e5;
+}
+
+[data-theme-primary="purple"] {
+  --primary-gradient-from: #9333ea;
+  --primary-gradient-to: #7e22ce;
+  --primary-bg: #9333ea;
+  --primary-hover: #7e22ce;
+}
+
+[data-theme-primary="pink"] {
+  --primary-gradient-from: #ec4899;
+  --primary-gradient-to: #db2777;
+  --primary-bg: #ec4899;
+  --primary-hover: #db2777;
+}
+
+[data-theme-primary="red"] {
+  --primary-gradient-from: #ef4444;
+  --primary-gradient-to: #dc2626;
+  --primary-bg: #ef4444;
+  --primary-hover: #dc2626;
+}
+
+[data-theme-primary="orange"] {
+  --primary-gradient-from: #f97316;
+  --primary-gradient-to: #ea580c;
+  --primary-bg: #f97316;
+  --primary-hover: #ea580c;
+}
+
+[data-theme-primary="amber"] {
+  --primary-gradient-from: #f59e0b;
+  --primary-gradient-to: #d97706;
+  --primary-bg: #f59e0b;
+  --primary-hover: #d97706;
+}
+
+[data-theme-primary="yellow"] {
+  --primary-gradient-from: #eab308;
+  --primary-gradient-to: #ca8a04;
+  --primary-bg: #eab308;
+  --primary-hover: #ca8a04;
+}
+
+[data-theme-primary="lime"] {
+  --primary-gradient-from: #84cc16;
+  --primary-gradient-to: #65a30d;
+  --primary-bg: #84cc16;
+  --primary-hover: #65a30d;
+}
+
+[data-theme-primary="green"] {
+  --primary-gradient-from: #22c55e;
+  --primary-gradient-to: #16a34a;
+  --primary-bg: #22c55e;
+  --primary-hover: #16a34a;
+}
+
+[data-theme-primary="emerald"] {
+  --primary-gradient-from: #10b981;
+  --primary-gradient-to: #059669;
+  --primary-bg: #10b981;
+  --primary-hover: #059669;
+}
+
+[data-theme-primary="teal"] {
+  --primary-gradient-from: #14b8a6;
+  --primary-gradient-to: #0d9488;
+  --primary-bg: #14b8a6;
+  --primary-hover: #0d9488;
+}
+
+[data-theme-primary="cyan"] {
+  --primary-gradient-from: #06b6d4;
+  --primary-gradient-to: #0891b2;
+  --primary-bg: #06b6d4;
+  --primary-hover: #0891b2;
+}
+
+[data-theme-primary="sky"] {
+  --primary-gradient-from: #0ea5e9;
+  --primary-gradient-to: #0284c7;
+  --primary-bg: #0ea5e9;
+  --primary-hover: #0284c7;
+}
+
+[data-theme-primary="slate"] {
+  --primary-gradient-from: #64748b;
+  --primary-gradient-to: #475569;
+  --primary-bg: #64748b;
+  --primary-hover: #475569;
+}
+
+[data-theme-primary="gray"] {
+  --primary-gradient-from: #6b7280;
+  --primary-gradient-to: #4b5563;
+  --primary-bg: #6b7280;
+  --primary-hover: #4b5563;
+}
+
+[data-theme-primary="zinc"] {
+  --primary-gradient-from: #71717a;
+  --primary-gradient-to: #52525b;
+  --primary-bg: #71717a;
+  --primary-hover: #52525b;
+}
+
+[data-theme-primary="stone"] {
+  --primary-gradient-from: #78716c;
+  --primary-gradient-to: #57534e;
+  --primary-bg: #78716c;
+  --primary-hover: #57534e;
+}
+
+/* Secondary color overrides */
+[data-theme-secondary="blue"] {
+  --secondary-gradient-from: #2563eb;
+  --secondary-gradient-to: #1d4ed8;
+}
+
+[data-theme-secondary="indigo"] {
+  --secondary-gradient-from: #6366f1;
+  --secondary-gradient-to: #4f46e5;
+}
+
+[data-theme-secondary="purple"] {
+  --secondary-gradient-from: #9333ea;
+  --secondary-gradient-to: #7e22ce;
+}
+
+[data-theme-secondary="pink"] {
+  --secondary-gradient-from: #ec4899;
+  --secondary-gradient-to: #db2777;
+}
+
+[data-theme-secondary="red"] {
+  --secondary-gradient-from: #ef4444;
+  --secondary-gradient-to: #dc2626;
+}
+
+[data-theme-secondary="orange"] {
+  --secondary-gradient-from: #f97316;
+  --secondary-gradient-to: #ea580c;
+}
+
+[data-theme-secondary="amber"] {
+  --secondary-gradient-from: #f59e0b;
+  --secondary-gradient-to: #d97706;
+}
+
+[data-theme-secondary="yellow"] {
+  --secondary-gradient-from: #eab308;
+  --secondary-gradient-to: #ca8a04;
+}
+
+[data-theme-secondary="lime"] {
+  --secondary-gradient-from: #84cc16;
+  --secondary-gradient-to: #65a30d;
+}
+
+[data-theme-secondary="green"] {
+  --secondary-gradient-from: #22c55e;
+  --secondary-gradient-to: #16a34a;
+}
+
+[data-theme-secondary="emerald"] {
+  --secondary-gradient-from: #10b981;
+  --secondary-gradient-to: #059669;
+}
+
+[data-theme-secondary="teal"] {
+  --secondary-gradient-from: #14b8a6;
+  --secondary-gradient-to: #0d9488;
+}
+
+[data-theme-secondary="cyan"] {
+  --secondary-gradient-from: #06b6d4;
+  --secondary-gradient-to: #0891b2;
+}
+
+[data-theme-secondary="sky"] {
+  --secondary-gradient-from: #0ea5e9;
+  --secondary-gradient-to: #0284c7;
+}
+
+[data-theme-secondary="slate"] {
+  --secondary-gradient-from: #64748b;
+  --secondary-gradient-to: #475569;
+}
+
+[data-theme-secondary="gray"] {
+  --secondary-gradient-from: #6b7280;
+  --secondary-gradient-to: #4b5563;
+}
+
+[data-theme-secondary="zinc"] {
+  --secondary-gradient-from: #71717a;
+  --secondary-gradient-to: #52525b;
+}
+
+[data-theme-secondary="stone"] {
+  --secondary-gradient-from: #78716c;
+  --secondary-gradient-to: #57534e;
+}
+
+/* Apply theme colors to elements with theme classes */
+.theme-gradient-text {
+  background: linear-gradient(to right, var(--primary-gradient-from), var(--secondary-gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-gradient-bg {
+  background: linear-gradient(to right, var(--primary-gradient-from), var(--secondary-gradient-to));
+}
+
+.theme-gradient-bg-section {
+  background: linear-gradient(to bottom right, var(--primary-gradient-from), var(--secondary-gradient-to));
+}
+
+.theme-primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.theme-primary-hover:hover {
+  background-color: var(--primary-hover);
+}

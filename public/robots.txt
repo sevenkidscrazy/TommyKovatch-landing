@@ -1,0 +1,31 @@
+# Robots.txt for tommykovatch.com
+# Allow all search engines and AI crawlers for maximum GEO/AEO visibility
+
+User-agent: *
+Allow: /
+
+# AI-specific crawlers (for Generative Engine Optimization)
+# Allow ChatGPT and other AI engines to index and cite content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://tommykovatch.com/sitemap.xml
