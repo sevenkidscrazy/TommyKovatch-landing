@@ -6,7 +6,6 @@ import { ProcessSection } from "@/app/components/ProcessSection";
 import { RegistrationSection } from "@/app/components/RegistrationSection";
 import { FAQSection } from "@/app/components/FAQSection";
 import { Footer } from "@/app/components/Footer";
-import { ThemeCustomizer } from "@/app/components/ThemeCustomizer";
 import { VideoProvider } from "@/app/contexts/VideoContext";
 import { SEOHead } from "@/app/components/SEOHead";
 import { StructuredData } from "@/app/components/StructuredData";
@@ -61,7 +60,6 @@ export default function App() {
           </main>
           <Footer />
           <Toaster />
-          <ThemeCustomizer />
         </div>
       </VideoProvider>
     </HelmetProvider>
