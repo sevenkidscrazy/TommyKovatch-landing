@@ -116,23 +116,23 @@ export function CaseStudiesCarousel() {
                         <span className="text-lg text-gray-900">{study.currentPayoff}</span>
                       </div>
                       
-                      <div className="flex justify-between items-center pb-3 border-b border-emerald-200 bg-emerald-50 -mx-4 px-4 py-2">
-                        <span className="text-emerald-800 font-semibold">Custom Plan Payoff</span>
-                        <span className="text-xl font-bold text-emerald-600">{study.fdfPlanPayoff}</span>
+                      <div className="flex justify-between items-center pb-3 border-b border-gray-200 -mx-4 px-4 py-2" style={{ backgroundColor: '#f8f6f1', borderColor: '#c9a961' }}>
+                        <span className="font-semibold" style={{ color: '#1a3a5c' }}>Custom Plan Payoff</span>
+                        <span className="text-xl font-bold" style={{ color: '#c9a961' }}>{study.fdfPlanPayoff}</span>
                       </div>
                       
                       <div className="flex justify-between items-center pb-3 border-b border-gray-200 py-6">
                         <span className="text-gray-600">Interest Saved</span>
-                        <span className="text-lg font-bold text-blue-600">{study.interestSaved}</span>
+                        <span className="text-lg font-bold" style={{ color: '#c9a961' }}>{study.interestSaved}</span>
                       </div>
                     </div>
 
                     {/* Capital Accumulated Highlight */}
-                    <div className="bg-gradient-to-br from-blue-50 to-emerald-50 p-6 rounded-xl border-2 border-emerald-200">
+                    <div className="p-6 rounded-xl border-2" style={{ background: 'linear-gradient(to bottom right, #f8f6f1, #faf9f5)', borderColor: '#c9a961' }}>
                       <p className="text-sm text-gray-700 text-center mb-2 leading-relaxed">
                         Liquid, Tax-Efficient Capital<br />Accumulated WHILE Eliminating All Debt
                       </p>
-                      <p className="text-3xl font-bold text-center text-emerald-600">
+                      <p className="text-3xl font-bold text-center" style={{ color: '#c9a961' }}>
                         {study.capitalAccumulated}
                       </p>
                     </div>
@@ -148,7 +148,8 @@ export function CaseStudiesCarousel() {
               onClick={scrollPrev}
               variant="outline"
               size="icon"
-              className="size-10 rounded-full border-2 border-gray-300 hover:border-blue-500 hover:bg-blue-50"
+              className="size-10 rounded-full border-2 hover:bg-opacity-10"
+              style={{ borderColor: '#1a3a5c', color: '#1a3a5c' }}
             >
               <ChevronLeft className="size-5" />
             </Button>
@@ -161,9 +162,10 @@ export function CaseStudiesCarousel() {
                   onClick={() => emblaApi?.scrollTo(index)}
                   className={`size-2.5 rounded-full transition-all ${
                     index === selectedIndex
-                      ? "bg-blue-600 w-6"
+                      ? "w-6"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
+                  style={index === selectedIndex ? { backgroundColor: '#c9a961' } : {}}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -173,7 +175,8 @@ export function CaseStudiesCarousel() {
               onClick={scrollNext}
               variant="outline"
               size="icon"
-              className="size-10 rounded-full border-2 border-gray-300 hover:border-blue-500 hover:bg-blue-50"
+              className="size-10 rounded-full border-2 hover:bg-opacity-10"
+              style={{ borderColor: '#1a3a5c', color: '#1a3a5c' }}
             >
               <ChevronRight className="size-5" />
             </Button>

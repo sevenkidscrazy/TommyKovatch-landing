@@ -135,17 +135,17 @@ export function RegistrationSection() {
   };
 
   return (
-    <section id="registration" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-blue-700 to-emerald-600">
+    <section id="registration" className="py-10 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2a4a6c 50%, #c9a961 100%)' }}>
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <div className="inline-block bg-white/20 text-white px-6 py-3 rounded-full text-sm border border-white/30 mb-6">
+          <div className="inline-block text-white px-6 py-3 rounded-full text-sm border mb-6" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)', borderColor: 'rgba(255, 255, 255, 0.3)' }}>
             <UserCheck className="inline-block size-5 mr-2 mb-1" />
             Get Started Today
           </div>
-          <h2 className="text-4xl sm:text-5xl text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl mb-4" style={{ color: '#f8f6f1' }}>
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto" style={{ color: '#f8f6f1' }}>
             Complete the form below to schedule your first session and start your path to complete financial freedom.
           </p>
         </div>
@@ -153,8 +153,8 @@ export function RegistrationSection() {
         <Card className="p-8 md:p-12 bg-white">
           {isSubmitted ? (
             <div className="text-center py-12">
-              <div className="size-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle2 className="size-10 text-emerald-600" />
+              <div className="size-20 rounded-full flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#faf9f5' }}>
+                <CheckCircle2 className="size-10" style={{ color: '#c9a961' }} />
               </div>
               <h3 className="text-3xl text-gray-900 mb-4">
                 Registration Received!
@@ -164,7 +164,7 @@ export function RegistrationSection() {
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
                     Thank you for accepting the challenge! Redirecting you to schedule your 1-on-1 meeting...
                   </p>
-                  <div className="mt-8 p-6 bg-blue-50 rounded-lg animate-pulse">
+                  <div className="mt-8 p-6 rounded-lg animate-pulse" style={{ backgroundColor: '#f5f7fa' }}>
                     <p className="text-gray-700">
                       <strong>Redirecting to set an appointment with our next available fiduciary advisor.</strong>
                     </p>
@@ -175,7 +175,7 @@ export function RegistrationSection() {
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                     Thank you for accepting the challenge! Our team will review your information and contact you within 24 hours to schedule your Educational Session.
                   </p>
-                  <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+                  <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: '#f5f7fa' }}>
                     <p className="text-gray-700">
                       <strong>Next Step:</strong> Watch for an email from Tommy Kovatch with details about your scheduled sessions.
                     </p>
@@ -344,7 +344,7 @@ export function RegistrationSection() {
               {/* Security Verification Section */}
               <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                 <div className="flex items-center gap-2 mb-3">
-                  <Shield className="size-5 text-blue-600" />
+                  <Shield className="size-5" style={{ color: '#1a3a5c' }} />
                   <Label className="text-base mb-0">Security Verification *</Label>
                   {!isProduction && (
                     <span className="ml-auto text-xs text-orange-600 bg-orange-100 px-2 py-1 rounded">
@@ -383,7 +383,7 @@ export function RegistrationSection() {
                     />
                     
                     {turnstileReady && (
-                      <div className="mt-3 flex items-center gap-2 text-sm text-emerald-600">
+                      <div className="mt-3 flex items-center gap-2 text-sm" style={{ color: '#c9a961' }}>
                         <CheckCircle2 className="size-4" />
                         <span>Verified - you're good to go!</span>
                       </div>
@@ -400,7 +400,8 @@ export function RegistrationSection() {
               
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white py-6 text-lg"
+                className="w-full text-white py-6 text-lg"
+                style={{ background: 'linear-gradient(to right, #1a3a5c, #c9a961)' }}
               >
                 Submit Registration
               </Button>

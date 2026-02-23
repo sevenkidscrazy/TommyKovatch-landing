@@ -54,27 +54,27 @@ export function QualificationsSection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {qualifications.map((qual, index) => {
-            const Icon = qual.icon;
-            const colorClasses = qual.color === "blue" 
+          {qualifications.map((qualification, index) => {
+            const Icon = qualification.icon;
+            const colorClasses = qualification.color === "blue" 
               ? "from-blue-500 to-blue-600" 
               : "from-emerald-500 to-emerald-600";
             
             return (
-              <Card key={index} className="p-8 hover:shadow-lg transition-shadow border-2 hover:border-blue-200">
+              <Card key={index} className="p-8 hover:shadow-lg transition-shadow border-2" style={{ borderColor: index % 2 === 0 ? '#1a3a5c20' : '#c9a96120' }}>
                 <div className="flex items-start gap-4">
-                  <div className={`size-12 rounded-lg bg-gradient-to-br ${colorClasses} flex items-center justify-center flex-shrink-0`}>
+                  <div className="size-12 rounded-lg flex items-center justify-center flex-shrink-0" style={ index % 2 === 0 ? { background: 'linear-gradient(to bottom right, #1a3a5c, #2a4a6c)' } : { background: 'linear-gradient(to bottom right, #c9a961, #d9b971)' }}>
                     <Icon className="size-6 text-white" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl text-gray-900 mb-2">
-                      {qual.title}
+                      {qualification.title}
                     </h3>
                     <p className="text-gray-600">
-                      {qual.description}
+                      {qualification.description}
                     </p>
                   </div>
-                  <Check className="size-6 text-emerald-600 flex-shrink-0" />
+                  <Check className="size-6 flex-shrink-0" style={{ color: '#c9a961' }} />
                 </div>
               </Card>
             );

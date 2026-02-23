@@ -182,35 +182,35 @@ export function ProcessSection() {
       icon: GraduationCap,
       title: "Financial Intake & Education",
       description: "Have your financial info on hand and be ready to learn.",
-      color: "blue"
+      color: "navy"
     },
     {
       number: 2,
       icon: FileText,
       title: "Strategy & Structuring",
       description: "Based on financial data provided, Tommy will structure your customized plan.",
-      color: "emerald"
+      color: "gold"
     },
     {
       number: 3,
       icon: Target,
       title: "Action Plan Review",
       description: "Review your custom financial structure & strategy in detail.",
-      color: "blue"
+      color: "navy"
     },
     {
       number: 4,
       icon: AlertCircle,
       title: "The Path Forward",
       description: "Tommy will show you a clear path to achieve your financial objectives in 10 years or less, tailored to your unique situation.",
-      color: "emerald"
+      color: "gold"
     },
     {
       number: 5,
       icon: Rocket,
       title: "Launch Your Strategy",
       description: "Your option to move forward with a customized budget-neutral finance restructure that eliminates the need to borrow ever again.",
-      color: "blue"
+      color: "navy"
     }
   ];
 
@@ -248,22 +248,23 @@ export function ProcessSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {steps.map((step) => {
             const Icon = step.icon;
-            const colorClasses = step.color === "blue" 
-              ? "from-blue-500 to-blue-600 border-blue-200" 
-              : "from-emerald-500 to-emerald-600 border-emerald-200";
-            const bgColor = step.color === "blue" ? "bg-blue-50" : "bg-emerald-50";
+            const navyClasses = "border-2";
+            const navyGradient = { background: 'linear-gradient(to bottom right, #1a3a5c, #2a4a6c)' };
+            const goldGradient = { background: 'linear-gradient(to bottom right, #c9a961, #d9b971)' };
+            const gradient = step.color === "navy" ? navyGradient : goldGradient;
+            const bgColor = step.color === "navy" ? { backgroundColor: '#f5f7fa' } : { backgroundColor: '#faf9f5' };
             const isGoalStep = step.number === 5;
             
             return (
-              <Card key={step.number} className={`p-6 hover:shadow-xl transition-all border-2 ${bgColor} ${isGoalStep ? 'scale-105' : ''} relative`} style={isGoalStep ? { boxShadow: '0 0 0 1px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.4), 0 0 40px rgba(16, 185, 129, 0.2), 0 10px 30px rgba(0, 0, 0, 0.15)' } : undefined}>
+              <Card key={step.number} className={`p-6 hover:shadow-xl transition-all ${navyClasses} ${isGoalStep ? 'scale-105' : ''} relative`} style={{ ...bgColor, ...(isGoalStep ? { boxShadow: '0 0 0 1px #c9a961, 0 0 20px rgba(201, 169, 97, 0.4), 0 0 40px rgba(201, 169, 97, 0.2), 0 10px 30px rgba(0, 0, 0, 0.15)' } : {}) }}>
                 {isGoalStep && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white px-4 py-1 rounded-full text-sm shadow-lg">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-white px-4 py-1 rounded-full text-sm shadow-lg" style={goldGradient}>
                     Your Goal
                   </div>
                 )}
                 <div className="text-center space-y-4">
                   <div className="relative inline-block">
-                    <div className={`size-16 rounded-full bg-gradient-to-br ${colorClasses} flex items-center justify-center mx-auto`}>
+                    <div className="size-16 rounded-full flex items-center justify-center mx-auto" style={gradient}>
                       <Icon className="size-8 text-white" />
                     </div>
                     <div className="absolute -top-2 -right-2 size-8 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-sm text-gray-900">
@@ -284,7 +285,7 @@ export function ProcessSection() {
           })}
         </div>
         
-        <div className="mt-12 p-8 bg-white rounded-xl border-2 border-emerald-200 shadow-lg">
+        <div className="mt-12 p-8 bg-white rounded-xl border-2 shadow-lg" style={{ borderColor: '#c9a961' }}>
           <div className="text-center">
             <h3 className="text-2xl text-gray-900 mb-3">
               A Complimentary Action Plan
@@ -337,38 +338,38 @@ export function ProcessSection() {
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
 
-        <div className="mt-8 p-8 bg-white rounded-xl border-2 border-blue-200 shadow-lg max-w-4xl mx-auto">
+        <div className="mt-8 p-8 bg-white rounded-xl border-2 shadow-lg max-w-4xl mx-auto" style={{ borderColor: '#1a3a5c' }}>
           <div className="text-center">
             <h3 className="text-2xl text-gray-900 mb-4">
               What to Bring
             </h3>
             <ul className="text-left max-w-3xl mx-auto space-y-2">
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>All debt balances (mortgage, credit cards, personal loans, student loans, car loans, etc)</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>Current interest rates for each debt account</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>Current debt payments for each, including minimum and actual if paying above the minimums</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>All savings account balances including retirement accounts, if applicable (401k, IRA, 403b, etc)</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>Amounts being contributed to each savings or retirement account</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>Income (weekly, monthly, W-2 and side hustles)</span>
               </li>
               <li className="text-lg text-gray-600 flex items-start">
-                <span className="text-blue-600 mr-3">•</span>
+                <span className="mr-3" style={{ color: '#c9a961' }}>•</span>
                 <span>Any existing insurance policies you are paying toward</span>
               </li>
             </ul>

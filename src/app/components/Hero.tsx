@@ -168,7 +168,7 @@ export function Hero() {
         {/* Headline and CTA below video */}
         <div className="text-center space-y-6">
           <h1 id="hero-heading" className="text-[1.7rem] sm:text-[2.1rem] lg:text-[2.6rem] tracking-tight leading-tight text-gray-900 max-w-7xl mx-auto">
-            <span className="text-blue-600">
+            <span style={{ color: '#1a3a5c' }}>
               Discover How To Use Intentional Financial Structuring To Build Wealth & Erase Debt <span className="font-bold italic">FASTER</span> Without Giving Up Control Or Momentum.
             </span>
           </h1>
@@ -177,7 +177,8 @@ export function Hero() {
             <Button 
               size="lg" 
               onClick={scrollToRegistration}
-              className="bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white px-8 py-6 text-lg group"
+              className="text-white px-8 py-6 text-lg group"
+              style={{ background: 'linear-gradient(to right, #1a3a5c, #c9a961)' }}
               aria-label="Get started with financial freedom consultation"
             >
               Get Started Today
