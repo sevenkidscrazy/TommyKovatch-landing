@@ -16,16 +16,16 @@ export function FAQSection() {
       answer: "Financial freedom is the state of having sufficient personal wealth to live without having to actively work for basic necessities. It means your assets generate enough income to cover your living expenses, giving you the freedom to pursue your passions and make choices without financial constraints."
     },
     {
-      question: "How can Tommy Kovatch help me achieve financial freedom?",
-      answer: "Tommy Kovatch provides personalized financial guidance and proven strategies to help you build wealth, create passive income streams, and achieve financial independence. Through one-on-one consultation, you'll receive a customized plan tailored to your unique financial situation and goals."
+      question: "How can Tommy help me achieve financial freedom?",
+      answer: "Tommy provides personalized financial guidance and proven strategies to help you build wealth, create passive income streams, and achieve financial independence. Through one-on-one consultation, you'll receive a customized plan tailored to your unique financial situation and goals."
     },
     {
       question: "Who qualifies for financial advisory services?",
       answer: "Anyone serious about achieving financial freedom can benefit from professional financial guidance. Whether you're just starting your wealth-building journey or looking to optimize existing investments, personalized financial strategies can help you reach your goals faster."
     },
     {
-      question: "What makes Tommy Kovatch different from other financial advisors?",
-      answer: "Tommy Kovatch focuses on proven, actionable strategies for achieving true financial freedom. With a personalized approach and commitment to client success, the emphasis is on creating sustainable wealth-building systems rather than quick fixes."
+      question: "What makes Tommy different from other financial advisors?",
+      answer: "Tommy focuses on proven, actionable strategies for achieving true financial freedom. With a personalized approach and commitment to client success, the emphasis is on creating sustainable wealth-building systems rather than quick fixes."
     },
     {
       question: "How do I get started with financial planning?",
@@ -58,7 +58,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Get answers to common questions about achieving financial freedom and working with Tommy Kovatch.
+            Get answers to common questions about achieving financial freedom and working with Tommy.
           </p>
         </div>
 

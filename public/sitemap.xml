@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  
-  <!-- Main Landing Page -->
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://tommykovatch.com/</loc>
+    <loc>https://www.tommykovatch.com/</loc>
     <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    
-    <!-- Video Sitemap Entry (for hero video) -->
-    <video:video>
-      <video:thumbnail_loc>https://tommykovatch.com/video-thumbnail.jpg</video:thumbnail_loc>
-      <video:title>Financial Freedom Strategy - Why You Are Here</video:title>
-      <video:description>Learn how to achieve financial freedom with proven wealth-building strategies from Tommy Kovatch. Discover intentional financial structuring to build wealth and erase debt faster without giving up control or momentum.</video:description>
-      <video:content_loc>https://player.vimeo.com/video/1164824132</video:content_loc>
-      <video:player_loc>https://player.vimeo.com/video/1164824132</video:player_loc>
-      <video:duration>330</video:duration>
-      <video:publication_date>2026-02-15</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-    </video:video>
-  </url>
-
-  <!-- FAQ Section -->
-  <url>
-    <loc>https://tommykovatch.com/#faq</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Registration Section -->
-  <url>
-    <loc>https://tommykovatch.com/#registration</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 </urlset>

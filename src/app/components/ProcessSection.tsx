@@ -3,6 +3,7 @@ import { GraduationCap, FileText, Target, AlertCircle, Rocket, VolumeX } from "l
 import { useEffect, useRef, useState } from "react";
 import Player from "@vimeo/player";
 import { useVideoContext } from "@/app/contexts/VideoContext";
+import { CaseStudiesCarousel } from "@/app/components/CaseStudiesCarousel";
 
 export function ProcessSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -292,6 +293,18 @@ export function ProcessSection() {
               Everyone receives a complimentary, no-obligation customized Action Plan. Just make sure you come prepared to your meeting with Tommy to make your time together as productive as possible.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Case Studies Carousel */}
+      <CaseStudiesCarousel />
+
+      <div className="container mx-auto max-w-7xl">
+        {/* Heading before second video */}
+        <div className="text-center mt-12 mb-6">
+          <h2 className="text-4xl sm:text-5xl text-gray-900">
+            I Almost Forgot!
+          </h2>
         </div>
 
         {/* Second Video Container - What to Bring Video */}

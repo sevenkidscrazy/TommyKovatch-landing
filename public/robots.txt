@@ -28,4 +28,5 @@ User-agent: PerplexityBot
 Allow: /
 
 # Sitemap location
+Sitemap: https://www.tommykovatch.com/sitemap.xml
 Sitemap: https://tommykovatch.com/sitemap.xml

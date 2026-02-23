@@ -10,8 +10,8 @@ interface SEOHeadProps {
 export function SEOHead({ 
   title = "Tommy Kovatch - Financial Freedom & Wealth Building Expert",
   description = "Discover proven strategies to achieve financial freedom with Tommy Kovatch. Expert guidance on wealth building, financial planning, and securing your financial future. Book your free consultation today.",
-  canonicalUrl = "https://tommykovatch.com",
-  ogImage = "https://tommykovatch.com/og-image.jpg" // You'll need to add this image
+  canonicalUrl = "https://www.tommykovatch.com",
+  ogImage = "https://www.tommykovatch.com/Tommy White Logo V2.png"
 }: SEOHeadProps) {
   return (
     <Helmet>
