@@ -8,8 +8,8 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({ 
-  title = "Tommy Kovatch - Financial Freedom & Wealth Building Expert",
-  description = "Discover proven strategies to achieve financial freedom with Tommy Kovatch. Expert guidance on wealth building, financial planning, and securing your financial future. Book your free consultation today.",
+  title = "Tommy Kovatch - Debt Elimination Specialist | Pay Off Debt 10-20 Years Faster",
+  description = "Expert debt elimination strategies helping you pay off mortgages and debt 10-20 years faster while building substantial wealth. Budget-neutral solutions that save $50K-$250K+ in interest. Proven results with real case studies.",
   canonicalUrl = "https://www.tommykovatch.com",
   ogImage = "https://www.tommykovatch.com/Tommy White Logo V2.png"
 }: SEOHeadProps) {
@@ -21,7 +21,7 @@ export function SEOHead({
       <meta name="description" content={description} />
       
       {/* Keywords for traditional SEO (still useful for some search engines) */}
-      <meta name="keywords" content="financial freedom, wealth building, financial advisor, Tommy Kovatch, financial planning, investment strategies, wealth management, financial independence, retirement planning" />
+      <meta name="keywords" content="debt elimination, mortgage acceleration, debt payoff strategies, budget-neutral debt elimination, Tommy Kovatch, interest savings, wealth building while eliminating debt, financial freedom, debt restructuring, pay off mortgage faster" />
       
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
